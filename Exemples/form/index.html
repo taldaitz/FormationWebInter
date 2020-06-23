@@ -18,6 +18,19 @@
             <label>Prénom : </label><input name="prenom" />
         </p>
 
+        <p>
+            <label>Profession : </label><input name="profession" list="listeProfessions" autofocus/>
+            <datalist id="listeProfessions">
+                <option value="formateur"></option>
+                <option value="designer"></option>
+                <option value="architecte"></option>
+                <option value="docteur"></option>
+                <option value="plombier"></option>
+                <option value="pompier"></option>
+                <option value="pharmacien"></option>
+            </datalist>
+        </p>
+
         <input type="submit" value="Envoyer"/>
     </form>
 

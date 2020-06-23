@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+
+    <h2>Inscription : </h2>
+
+    <form action="traitement.php" method="POST">
+        <fieldset>
+            <legend>Identité</legend>
+            <p>
+                <label>Prénom : </label>
+                <input type="text" name="prenom" placeholder="Renseigner votre Prénom"/>
+            </p>
+
+            <p>
+                <label>Nom : </label>
+                <input type="text" name="nom" placeholder="Renseigner votre Nom"/>
+            </p>
+
+            <p>
+                <label>Adresse : </label>
+                <input type="text" name="adresse" placeholder="Renseigner votre Adresse"/>
+            </p>
+
+            <p>
+                <label>Ville : </label>
+                <input type="text" name="ville" placeholder="Renseigner votre Ville"/>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sécurité</legend>
+
+            <p>
+                <label>Email : </label>
+                <input type="email" name="email" placeholder="Renseigner votre Email"/>
+            </p>
+
+            <p>
+                <label>Mot de passe : </label>
+                <input type="password" name="motdepasse" placeholder="au moins 6 caractères"/>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Préférences</legend>
+            <p>
+                <label>Commentaires : </label>
+                <input type="text" name="commentaires" placeholder="Renseigner votre Commentaires"/>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+    </form>
+    
+</body>
+</html>
