@@ -1,0 +1,28 @@
+.carre {
+    border: 2px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+div {
+    background-color: deepskyblue;
+    display: inline-block;
+}
+
+span {
+    background-color: goldenrod;
+    display: block;
+}
+
+#secondCarre{
+    position: absolute;
+    background-color: lightblue;
+    top: 0px;
+    right: 0px;
+}
+
+#carreTrois {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}

@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+.carre {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+}
+
+.bleu {background-color: blue;}
+.rouge {
+    background-color: red;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 30pt;
+    transition: width 2s, height 2s, background-color 1s, top 2s, right 2s, font-family 2s;
+}
+
+.rouge:hover {
+    width: 500px;
+    height: 500px;
+    top: 50px;
+    right: 50px;
+    background-color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.jaune {
+    background-color: yellow;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.vert {
+    background-color: green;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
