@@ -1,0 +1,31 @@
+h1, h2 {
+    color: blue;
+}
+
+p {
+    background-color: lightgrey;
+}
+
+#secondParagraphe {
+    background-color: white;
+    color: lightgrey;
+}
+
+#lienEmail {
+    color: orange;
+}
+
+.rouge {
+    color: #cf111e;
+}
+.gras {
+    font-weight: bold;
+}
+
+img:hover {
+    width: 500px;
+}
+
+section:hover h2 {
+    color: green;
+}
