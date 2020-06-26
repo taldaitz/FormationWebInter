@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    height: 166px;
+}
+
+header, nav, main, aside, footer {
+    border: 2px solid black;
+}
+
+aside {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+    width: 200px;
+    right: 0px;
+    top: 171px
+}
+
+aside img {
+    width: 180px;
+}
+
+main {
+    margin: 5px 225px 30px 220px;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: blue;
+}
+
+h1 {
+    font-size: 45pt;
+    font-weight: bold;
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+cite {
+    text-decoration: underline;
+}
+
+p {
+    background-color: lightgrey;
+}
+
+section h2 {
+    transition: color 2s;
+}
+section:hover h2 {
+    color: green;
+}
+
+nav {
+    position: fixed;
+    width: 200px;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+
+    font-family: 'Amatic SC', cursive;
+    font-size: 20pt;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 1s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: white;
+}
+
+nav li {
+    transition: background-color 1s;
+    text-indent: 10px;
+}
+
+nav li:hover {
+    background-color: black;
+}
+
+footer {
+    border: 5px solid black;
+}
+
+.rouge {
+    color: #cf111e;
+}
+.gras {
+    font-weight: bold;
+}
+
+#secondParagraphe {
+    background-color: white;
+    color: lightgrey;
+}
+
+#lienEmail {
+    color: orange;
+}
+
+#gallerie img {
+    transition: width 3s;
+}
+
+#gallerie img:hover {
+    width: 500px;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    aside {
+        display: none;
+    }
+
+    nav {
+        position: relative;
+        width: initial;
+        margin: 5px 0;
+    }
+
+    nav li {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    main {
+        margin: 5px 0 30px 0;
+    }
+
+    #gallerie img:hover {
+        width: 250px;
+    }
+
+}
+

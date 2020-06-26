@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+#errorMollitia {
+    color: red;
+}
+
+h1 {
+    text-decoration: underline;
+}
+
+p, img {
+    border: black solid 4px;
+}
+
+.bordureVerte {
+    border-color: chartreuse;
+}
+
+p {
+    top: 0px;
+    right: 0px;
+    position: fixed;
+    width: 400px;
+    margin: 0;
+    transition: width 2s, font-size 2s;
+}
+
+p:hover {
+    width: 800px;
+    font-size: 18pt;
+}

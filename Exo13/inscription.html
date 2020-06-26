@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+
+    <h2>Inscription : </h2>
+
+    <form action="traitement.php" method="POST">
+        <fieldset>
+            <legend>Identité</legend>
+            <p>
+                <label>Prénom : </label>
+                <input type="text" name="prenom" placeholder="Renseigner votre Prénom" required/>
+            </p>
+
+            <p>
+                <label>Nom : </label>
+                <input type="text" name="nom" placeholder="Renseigner votre Nom" required/>
+            </p>
+
+            <p>
+                <label>Civilité : </label>
+                <select name="civilite">
+                    <option value="Mr">Monsieur</option>
+                    <option value="Mme">Madame</option>
+                    <option value="Mlle">Mademoiselle</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Date de naissance : </label>
+                <input type="date" name="naissance">
+            </p>
+
+            <p>
+                <label>Adresse : </label>
+                <input type="text" name="adresse" placeholder="Renseigner votre Adresse"/>
+            </p>
+
+            <p>
+                <label>Ville : </label>
+                <input type="text" name="ville" placeholder="Renseigner votre Ville" list="listeVille"/>
+                <datalist id="listeVille">
+                    <option value="Lyon"></option>
+                    <option value="Paris"></option>
+                    <option value="Strasbourg"></option>
+                    <option value="Aix-en-provence"></option>
+                    <option value="Lille"></option>
+                    <option value="Lens"></option>
+                </datalist>
+
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sécurité</legend>
+
+            <p>
+                <label>Email : </label>
+                <input type="email" name="email" placeholder="Renseigner votre Email" required/>
+            </p>
+
+            <p>
+                <label>Mot de passe : </label>
+                <input type="password" name="motdepasse" placeholder="au moins 6 caractères" required/>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Préférences</legend>
+            <p>
+                <label>Commentaires : </label>
+                <textarea name="commentaires" cols="50" rows="10" placeholder="Renseigner votre Commentaires"></textarea>
+            </p>
+
+            <p>
+                <label>Centre d'interets : </label>
+                <input type="checkbox" name="interets" value="entree"> <label>Porte d'entrée</label>
+                <input type="checkbox" name="interets" value="securisee"> <label>Porte sécurisée</label>
+                <input type="checkbox" name="interets" value="fenetre"> <label>Porte fenêtre</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Envoyer">
+        </p>
+    </form>
+    
+</body>
+</html>
